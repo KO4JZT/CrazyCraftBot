@@ -1,4 +1,5 @@
 const tmi = require('tmi.js');
+require('dotenv').config()
 const config = require('./config.json')
 
 const client = new tmi.Client({
@@ -8,8 +9,8 @@ const client = new tmi.Client({
 		secure: true
 	},
 	identity: {
-		username: config.username,
-		password: `oauth:${config.password}`
+		username: process.env.USERNAME,
+		password: `oauth:${process.env.PASSWORD}`
 	},
 	channels: config.channels
 });
