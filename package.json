@@ -5,6 +5,9 @@
   "repository": "https://github.com/KO4JZT/CrazyCraftBot.git",
   "author": "Colin <colin@cpdev.me>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "tmi.js": "^1.7.1"
